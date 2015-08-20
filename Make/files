@@ -1,0 +1,4 @@
+refineWallLayerSmart.C
+
+EXE = $(FOAM_APPBIN)/refineWallLayerSmart
+
