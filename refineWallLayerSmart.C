@@ -255,7 +255,7 @@ int main(int argc, char *argv[])
             << nl << endl;
     }
 
-    volScalarField::GeometricBoundaryField dOrg = nearWallDist(mesh).y();
+    volScalarField::Boundary dOrg = nearWallDist(mesh).y();
     Info<< "\tOriginally, patch " << patchID
         << " named " << pp.name() << nl
         << "\t d  : min: " << min(dOrg[patchID])
@@ -439,7 +439,7 @@ int main(int argc, char *argv[])
          Foam::IOobject::MUST_READ
      )
     );
-    volScalarField::GeometricBoundaryField dNew = 
+    volScalarField::Boundary dNew = 
         nearWallDist(meshUpdated).y();
     Info<< "\n\tAfter refining, Patch " << patchID
         << " named " << pp.name() << nl

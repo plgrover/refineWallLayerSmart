@@ -1,4 +1,4 @@
 refineWallLayerSmart.C
 
-EXE = $(FOAM_APPBIN)/refineWallLayerSmart
+EXE = $(FOAM_USER_APPBIN)/refineWallLayerSmart
 
