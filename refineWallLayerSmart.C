@@ -194,7 +194,7 @@ int main(int argc, char *argv[])
         scalar YpAvg = average(Yp);
 
         scalar targetYPlusValue;
-        targetYPlusValue = args.optionLookupOrDefault("targetYPlus",1);
+        targetYPlusValue = args.optionLookupOrDefault("targetYPlus",1.0);
         if (args.optionFound("targetYPlus"))
         {
             if
